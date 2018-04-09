@@ -1,0 +1,1300 @@
+# Logfile created on 2018-04-08 18:18:33 +0530 by logger.rb/56815
+[2018-04-08T18:18:33+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T18:18:33+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T18:18:34+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T18:18:34+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T18:18:34+05:30] INFO: Chef-client pid: 28159
+[2018-04-08T18:18:34+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T18:18:45+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T18:18:45+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T18:18:45+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T18:18:45+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T18:18:45+05:30] INFO: Running start handlers
+[2018-04-08T18:18:45+05:30] INFO: Start handlers complete.
+[2018-04-08T18:18:48+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/filewrite/metadata.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/filewrite/README.md in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/filewrite/chefignore in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/filewrite/Berksfile in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/filewrite/.kitchen.yml in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/filewrite/test/smoke/default/default_test.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/filewrite/spec/spec_helper.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/filewrite/spec/unit/recipes/default_spec.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/filewrite/.gitignore in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/README.md in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/CHANGELOG.md in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/metadata.json in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/docker_base.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/docker_container.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/docker_exec.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/docker_image.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/docker_installation_package.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/docker_installation_script.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/docker_installation_tarball.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/docker_network.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/docker_registry.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/docker_service.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/docker_service_base.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/docker_service_manager_execute.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/docker_service_manager_systemd.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/docker_service_manager_sysvinit_debian.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/docker_service_manager_sysvinit_rhel.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/docker_service_manager_upstart.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/docker_tag.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/docker_volume.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/libraries/helpers_service.rb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/templates/.DS_Store in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/templates/default/.DS_Store in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/templates/default/default/docker-wait-ready.erb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/templates/default/default/docker.erb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/templates/default/sysconfig/docker.erb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/templates/default/systemd/docker.service-override.erb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/templates/default/systemd/docker.service.erb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/templates/default/systemd/docker.socket-override.erb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/templates/default/systemd/docker.socket.erb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/templates/default/systemd/tmpfiles.d.conf.erb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/templates/default/sysvinit/docker-debian.erb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/templates/default/sysvinit/docker-rhel.erb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/templates/default/upstart/docker.conf.erb in the cache.
+[2018-04-08T18:18:48+05:30] INFO: Storing updated cookbooks/docker/CONTRIBUTING.md in the cache.
+[2018-04-08T18:19:49+05:30] ERROR: Running exception handlers
+[2018-04-08T18:19:49+05:30] ERROR: Exception handlers complete
+[2018-04-08T18:19:49+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T18:19:49+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T18:19:49+05:30] ERROR: Expected process to exit with [0], but received '5'
+---- Begin output of bundle install ----
+STDOUT: Fetching gem metadata from https://www.rubygems.org/..........................
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Fetching excon 0.62.0
+Fetching multi_json 1.13.1
+Using bundler 1.15.1
+Bundler::SudoNotPermittedError: Bundler requires sudo access to install at the
+moment. Try installing again, granting Bundler sudo access when prompted, or
+installing into a different path.
+An error occurred while installing excon (0.62.0), and Bundler cannot continue.
+Make sure that `gem install excon -v '0.62.0'` succeeds before bundling.
+
+In Gemfile:
+  docker-api was resolved to 1.34.0, which depends on
+    excon
+STDERR: sudo: no tty present and no askpass program specified
+sudo: no tty present and no askpass program specified
+---- End output of bundle install ----
+Ran bundle install returned 5
+[2018-04-08T18:19:49+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T19:14:48+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T19:14:48+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T19:14:48+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T19:14:48+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T19:14:48+05:30] INFO: Chef-client pid: 29407
+[2018-04-08T19:14:48+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T19:16:20+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T19:16:20+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T19:16:20+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T19:16:20+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T19:16:20+05:30] INFO: Running start handlers
+[2018-04-08T19:16:20+05:30] INFO: Start handlers complete.
+[2018-04-08T19:16:21+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T19:16:38+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...........................
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Fetching excon 0.62.0
+Installing excon 0.62.0
+Fetching multi_json 1.13.1
+Installing multi_json 1.13.1
+Using bundler 1.15.1
+Fetching docker-api 1.34.0
+Installing docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T19:16:40+05:30] ERROR: Running exception handlers
+[2018-04-08T19:16:40+05:30] ERROR: Exception handlers complete
+[2018-04-08T19:16:40+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T19:16:40+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T19:16:40+05:30] ERROR: undefined method `containe_name' for DockerCookbook::DockerContainer
+[2018-04-08T19:16:41+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T19:19:39+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T19:19:39+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T19:19:40+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T19:19:40+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T19:19:40+05:30] INFO: Chef-client pid: 29927
+[2018-04-08T19:19:40+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T19:19:46+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T19:19:46+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T19:19:46+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T19:19:46+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T19:19:46+05:30] INFO: Running start handlers
+[2018-04-08T19:19:46+05:30] INFO: Start handlers complete.
+[2018-04-08T19:19:46+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T19:19:47+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T19:19:55+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T19:19:55+05:30] INFO: Processing docker_image[kjunine/redis] action pull (filewrite::default line 7)
+[2018-04-08T19:19:55+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T19:19:55+05:30] ERROR: Running exception handlers
+[2018-04-08T19:19:55+05:30] ERROR: Exception handlers complete
+[2018-04-08T19:19:55+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T19:19:55+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T19:19:55+05:30] ERROR: docker_image[kjunine/redis] (filewrite::default line 7) had an error: Excon::Error::Socket: No such file or directory - connect(2) for /var/run/docker.sock (Errno::ENOENT)
+[2018-04-08T19:19:56+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T19:21:48+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T19:21:48+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T19:21:48+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T19:21:48+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T19:21:48+05:30] INFO: Chef-client pid: 30242
+[2018-04-08T19:21:48+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T19:21:53+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T19:21:53+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T19:21:53+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T19:21:53+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T19:21:53+05:30] INFO: Running start handlers
+[2018-04-08T19:21:53+05:30] INFO: Start handlers complete.
+[2018-04-08T19:21:53+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T19:21:53+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T19:21:56+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T19:21:56+05:30] INFO: Processing docker_image[redis] action pull (filewrite::default line 7)
+[2018-04-08T19:21:57+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T19:21:57+05:30] ERROR: Running exception handlers
+[2018-04-08T19:21:57+05:30] ERROR: Exception handlers complete
+[2018-04-08T19:21:57+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T19:21:57+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T19:21:57+05:30] ERROR: docker_image[redis] (filewrite::default line 7) had an error: Excon::Error::Socket: No such file or directory - connect(2) for /var/run/docker.sock (Errno::ENOENT)
+[2018-04-08T19:21:57+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T19:34:23+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T19:34:23+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T19:34:24+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T19:34:24+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T19:34:24+05:30] INFO: Chef-client pid: 2134
+[2018-04-08T19:34:24+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T19:34:30+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T19:34:30+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T19:34:30+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T19:34:30+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T19:34:30+05:30] INFO: Running start handlers
+[2018-04-08T19:34:30+05:30] INFO: Start handlers complete.
+[2018-04-08T19:34:30+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T19:34:30+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T19:34:33+05:30] ERROR: Running exception handlers
+[2018-04-08T19:34:33+05:30] ERROR: Exception handlers complete
+[2018-04-08T19:34:33+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T19:34:33+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T19:34:33+05:30] ERROR: Expected process to exit with [0], but received '17'
+---- Begin output of bundle install ----
+STDOUT: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching source index from https://www.rubygems.org/
+
+Retrying fetcher due to error (2/4): Bundler::HTTPError Could not fetch specs from https://www.rubygems.org/
+Retrying fetcher due to error (3/4): Bundler::HTTPError Could not fetch specs from https://www.rubygems.org/
+Retrying fetcher due to error (4/4): Bundler::HTTPError Could not fetch specs from https://www.rubygems.org/
+Could not fetch specs from https://www.rubygems.org/
+STDERR: 
+---- End output of bundle install ----
+Ran bundle install returned 17
+[2018-04-08T19:34:33+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T19:37:14+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T19:37:14+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T19:37:15+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T19:37:15+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T19:37:15+05:30] INFO: Chef-client pid: 2440
+[2018-04-08T19:37:15+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T19:37:19+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T19:37:19+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T19:37:19+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T19:37:19+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T19:37:19+05:30] INFO: Running start handlers
+[2018-04-08T19:37:19+05:30] INFO: Start handlers complete.
+[2018-04-08T19:37:19+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T19:37:20+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T19:37:21+05:30] ERROR: Running exception handlers
+[2018-04-08T19:37:21+05:30] ERROR: Exception handlers complete
+[2018-04-08T19:37:21+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T19:37:21+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T19:37:21+05:30] ERROR: Expected process to exit with [0], but received '17'
+---- Begin output of bundle install ----
+STDOUT: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching source index from https://www.rubygems.org/
+
+Retrying fetcher due to error (2/4): Bundler::HTTPError Could not fetch specs from https://www.rubygems.org/
+Retrying fetcher due to error (3/4): Bundler::HTTPError Could not fetch specs from https://www.rubygems.org/
+Retrying fetcher due to error (4/4): Bundler::HTTPError Could not fetch specs from https://www.rubygems.org/
+Could not fetch specs from https://www.rubygems.org/
+STDERR: 
+---- End output of bundle install ----
+Ran bundle install returned 17
+[2018-04-08T19:37:21+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T19:38:33+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T19:38:33+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T19:38:33+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T19:38:33+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T19:38:33+05:30] INFO: Chef-client pid: 2773
+[2018-04-08T19:38:33+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T19:38:38+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T19:38:38+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T19:38:38+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T19:38:38+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T19:38:38+05:30] INFO: Running start handlers
+[2018-04-08T19:38:38+05:30] INFO: Start handlers complete.
+[2018-04-08T19:38:38+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T19:38:42+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/..............
+Fetching version metadata from https://www.rubygems.org/.
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T19:38:42+05:30] INFO: Processing docker_image[redis] action pull (filewrite::default line 7)
+[2018-04-08T19:38:42+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T19:38:42+05:30] ERROR: Running exception handlers
+[2018-04-08T19:38:42+05:30] ERROR: Exception handlers complete
+[2018-04-08T19:38:42+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T19:38:42+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T19:38:42+05:30] ERROR: docker_image[redis] (filewrite::default line 7) had an error: Excon::Error::Socket: No such file or directory - connect(2) for /var/run/docker.sock (Errno::ENOENT)
+[2018-04-08T19:38:42+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T19:41:10+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T19:41:10+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T19:41:10+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T19:41:10+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T19:41:10+05:30] INFO: Chef-client pid: 3164
+[2018-04-08T19:41:10+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T19:41:15+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T19:41:15+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T19:41:15+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T19:41:15+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T19:41:15+05:30] INFO: Running start handlers
+[2018-04-08T19:41:15+05:30] INFO: Start handlers complete.
+[2018-04-08T19:41:15+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T19:41:15+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T19:41:18+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T19:41:18+05:30] ERROR: Running exception handlers
+[2018-04-08T19:41:18+05:30] ERROR: Exception handlers complete
+[2018-04-08T19:41:18+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T19:41:18+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T19:41:18+05:30] ERROR: undefined method `cmd_timeout' for DockerCookbook::DockerContainer
+[2018-04-08T19:41:18+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T19:41:52+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T19:41:52+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T19:41:52+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T19:41:52+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T19:41:52+05:30] INFO: Chef-client pid: 3435
+[2018-04-08T19:41:52+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T19:41:57+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T19:41:57+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T19:41:57+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T19:41:57+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T19:41:57+05:30] INFO: Running start handlers
+[2018-04-08T19:41:57+05:30] INFO: Start handlers complete.
+[2018-04-08T19:41:57+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T19:41:57+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T19:42:00+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T19:42:00+05:30] INFO: Processing docker_container[redis] action run (filewrite::default line 7)
+[2018-04-08T19:42:00+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T19:42:00+05:30] ERROR: Running exception handlers
+[2018-04-08T19:42:00+05:30] ERROR: Exception handlers complete
+[2018-04-08T19:42:00+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T19:42:00+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T19:42:00+05:30] ERROR: docker_container[redis] (filewrite::default line 7) had an error: Excon::Error::Socket: No such file or directory - connect(2) for /var/run/docker.sock (Errno::ENOENT)
+[2018-04-08T19:42:01+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T19:44:28+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T19:44:28+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T19:44:28+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T19:44:28+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T19:44:28+05:30] INFO: Chef-client pid: 3716
+[2018-04-08T19:44:28+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T19:44:31+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T19:44:31+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T19:44:31+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T19:44:31+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T19:44:31+05:30] INFO: Running start handlers
+[2018-04-08T19:44:31+05:30] INFO: Start handlers complete.
+[2018-04-08T19:44:31+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T19:44:31+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T19:44:38+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T19:44:38+05:30] INFO: Processing docker_container[redis] action create (filewrite::default line 7)
+[2018-04-08T19:44:39+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T19:44:39+05:30] ERROR: Running exception handlers
+[2018-04-08T19:44:39+05:30] ERROR: Exception handlers complete
+[2018-04-08T19:44:39+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T19:44:39+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T19:44:39+05:30] ERROR: docker_container[redis] (filewrite::default line 7) had an error: Excon::Error::Socket: No such file or directory - connect(2) for /var/run/docker.sock (Errno::ENOENT)
+[2018-04-08T19:44:39+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T19:48:04+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T19:48:04+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T19:48:04+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T19:48:04+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T19:48:04+05:30] INFO: Chef-client pid: 4199
+[2018-04-08T19:48:04+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T19:48:16+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T19:48:16+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T19:48:16+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T19:48:16+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T19:48:16+05:30] INFO: Running start handlers
+[2018-04-08T19:48:16+05:30] INFO: Start handlers complete.
+[2018-04-08T19:48:18+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T19:48:18+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T19:49:30+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/..............
+Fetching version metadata from https://www.rubygems.org/.
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T19:49:34+05:30] INFO: Processing docker_container[redis] action create (filewrite::default line 7)
+[2018-04-08T19:49:34+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T19:49:34+05:30] ERROR: Running exception handlers
+[2018-04-08T19:49:34+05:30] ERROR: Exception handlers complete
+[2018-04-08T19:49:34+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T19:49:34+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T19:49:34+05:30] ERROR: docker_container[redis] (filewrite::default line 7) had an error: Excon::Error::Socket: No such file or directory - connect(2) for /var/run/docker.sock (Errno::ENOENT)
+[2018-04-08T19:49:34+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T19:51:33+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T19:51:33+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T19:51:33+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T19:51:33+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T19:51:33+05:30] INFO: Chef-client pid: 4718
+[2018-04-08T19:51:33+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T19:51:40+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T19:51:40+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T19:51:40+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T19:51:40+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T19:51:40+05:30] INFO: Running start handlers
+[2018-04-08T19:51:40+05:30] INFO: Start handlers complete.
+[2018-04-08T19:51:40+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T19:51:50+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T19:51:50+05:30] INFO: Processing docker_container[redis] action create (filewrite::default line 7)
+[2018-04-08T19:51:51+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T19:51:51+05:30] ERROR: Running exception handlers
+[2018-04-08T19:51:51+05:30] ERROR: Exception handlers complete
+[2018-04-08T19:51:51+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T19:51:51+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T19:51:51+05:30] ERROR: docker_container[redis] (filewrite::default line 7) had an error: Docker::Error::NotFoundError: No such image: redis:latest
+
+[2018-04-08T19:51:51+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T19:55:00+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T19:55:00+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T19:55:00+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T19:55:00+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T19:55:00+05:30] INFO: Chef-client pid: 5013
+[2018-04-08T19:55:00+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T19:55:05+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T19:55:05+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T19:55:05+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T19:55:05+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T19:55:05+05:30] INFO: Running start handlers
+[2018-04-08T19:55:05+05:30] INFO: Start handlers complete.
+[2018-04-08T19:55:05+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T19:55:05+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T19:55:08+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T19:55:09+05:30] INFO: Processing docker_image[redis] action pull (filewrite::default line 5)
+[2018-04-08T19:55:28+05:30] INFO: Processing docker_container[redis] action create (filewrite::default line 8)
+[2018-04-08T19:55:28+05:30] INFO: Chef Run complete in 23.068783738 seconds
+[2018-04-08T19:55:28+05:30] INFO: Running report handlers
+[2018-04-08T19:55:28+05:30] INFO: Report handlers complete
+[2018-04-08T19:55:29+05:30] WARN: *****************************************
+[2018-04-08T19:55:29+05:30] WARN: Did not find config file: /solo.rb, using command line options.
+[2018-04-08T19:55:29+05:30] WARN: *****************************************
+[2018-04-08T19:55:29+05:30] FATAL: Cannot load configuration from node.json
+[2018-04-08T20:34:35+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T20:34:35+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T20:34:35+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T20:34:35+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T20:34:35+05:30] INFO: Chef-client pid: 6279
+[2018-04-08T20:34:35+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T20:34:41+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T20:34:41+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T20:34:41+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T20:34:41+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T20:34:41+05:30] INFO: Running start handlers
+[2018-04-08T20:34:41+05:30] INFO: Start handlers complete.
+[2018-04-08T20:34:41+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T20:34:41+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T20:34:46+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/..............
+Fetching version metadata from https://www.rubygems.org/.
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T20:34:46+05:30] ERROR: Running exception handlers
+[2018-04-08T20:34:46+05:30] ERROR: Exception handlers complete
+[2018-04-08T20:34:46+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T20:34:46+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T20:34:46+05:30] ERROR: /home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/filewrite/recipes/default.rb:8: syntax error, unexpected '-'
+not-id {"docker --version"}
+    ^
+[2018-04-08T20:34:46+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T20:36:18+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T20:36:18+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T20:36:18+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T20:36:18+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T20:36:18+05:30] INFO: Chef-client pid: 6644
+[2018-04-08T20:36:18+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T20:36:23+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T20:36:23+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T20:36:23+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T20:36:23+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T20:36:23+05:30] INFO: Running start handlers
+[2018-04-08T20:36:23+05:30] INFO: Start handlers complete.
+[2018-04-08T20:36:24+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T20:36:24+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T20:36:32+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T20:36:33+05:30] ERROR: Running exception handlers
+[2018-04-08T20:36:33+05:30] ERROR: Exception handlers complete
+[2018-04-08T20:36:33+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T20:36:33+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T20:36:33+05:30] ERROR: /home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/filewrite/recipes/default.rb:8: syntax error, unexpected '-'
+not-if {"docker --version"}
+    ^
+/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/filewrite/recipes/default.rb:8: syntax error, unexpected '}', expecting =>
+not-if {"docker --version"}
+                           ^
+/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/filewrite/recipes/default.rb:26: syntax error, unexpected end-of-input, expecting keyword_end
+[2018-04-08T20:36:33+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T20:38:23+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T20:38:23+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T20:38:23+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T20:38:23+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T20:38:23+05:30] INFO: Chef-client pid: 6931
+[2018-04-08T20:38:23+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T20:38:28+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T20:38:28+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T20:38:28+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T20:38:28+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T20:38:28+05:30] INFO: Running start handlers
+[2018-04-08T20:38:28+05:30] INFO: Start handlers complete.
+[2018-04-08T20:38:28+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T20:38:28+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T20:38:36+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T20:38:36+05:30] INFO: Processing yum_package[docker] action install (filewrite::default line 6)
+[2018-04-08T20:38:37+05:30] INFO: Processing service[docker] action enable (filewrite::default line 10)
+[2018-04-08T20:38:37+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T20:38:37+05:30] ERROR: Running exception handlers
+[2018-04-08T20:38:37+05:30] ERROR: Exception handlers complete
+[2018-04-08T20:38:37+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T20:38:37+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T20:38:37+05:30] ERROR: service[docker] (filewrite::default line 10) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '1'
+---- Begin output of /bin/systemctl --system enable docker ----
+STDOUT: 
+STDERR: Failed to execute operation: No such file or directory
+---- End output of /bin/systemctl --system enable docker ----
+Ran /bin/systemctl --system enable docker returned 1
+[2018-04-08T20:38:37+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T20:40:27+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T20:40:27+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T20:40:27+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T20:40:27+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T20:40:27+05:30] INFO: Chef-client pid: 7257
+[2018-04-08T20:40:27+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T20:40:32+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T20:40:32+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T20:40:32+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T20:40:32+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T20:40:32+05:30] INFO: Running start handlers
+[2018-04-08T20:40:32+05:30] INFO: Start handlers complete.
+[2018-04-08T20:40:32+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T20:40:35+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T20:40:36+05:30] INFO: Processing yum_package[docker] action install (filewrite::default line 6)
+[2018-04-08T20:40:36+05:30] INFO: Processing service[docker] action enable (filewrite::default line 10)
+[2018-04-08T20:40:36+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T20:40:36+05:30] ERROR: Running exception handlers
+[2018-04-08T20:40:36+05:30] ERROR: Exception handlers complete
+[2018-04-08T20:40:36+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T20:40:36+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T20:40:36+05:30] ERROR: service[docker] (filewrite::default line 10) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '1'
+---- Begin output of /bin/systemctl --system enable docker ----
+STDOUT: 
+STDERR: Failed to execute operation: No such file or directory
+---- End output of /bin/systemctl --system enable docker ----
+Ran /bin/systemctl --system enable docker returned 1
+[2018-04-08T20:40:36+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T20:42:51+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T20:42:51+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T20:42:51+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T20:42:51+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T20:42:51+05:30] INFO: Chef-client pid: 7586
+[2018-04-08T20:42:51+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T20:42:57+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T20:42:57+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T20:42:57+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T20:42:57+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T20:42:57+05:30] INFO: Running start handlers
+[2018-04-08T20:42:57+05:30] INFO: Start handlers complete.
+[2018-04-08T20:42:57+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T20:42:58+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T20:43:06+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T20:43:06+05:30] INFO: Processing yum_package[docker] action install (filewrite::default line 6)
+[2018-04-08T20:43:06+05:30] INFO: Processing docker_service[default] action create (filewrite::default line 10)
+[2018-04-08T20:43:06+05:30] INFO: Processing docker_installation_script[default] action create (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service.rb line 57)
+[2018-04-08T20:43:06+05:30] INFO: Processing yum_package[curl] action install (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_installation_script.rb line 32)
+[2018-04-08T20:43:17+05:30] INFO: Processing execute[install docker] action run (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_installation_script.rb line 34)
+[2018-04-08T20:43:17+05:30] INFO: Processing docker_service[default] action start (filewrite::default line 10)
+[2018-04-08T20:43:17+05:30] INFO: Processing docker_service_manager_systemd[default] action start (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service.rb line 75)
+[2018-04-08T20:43:17+05:30] INFO: Processing directory[/usr/libexec/docker] action create (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_base.rb line 104)
+[2018-04-08T20:43:17+05:30] INFO: Processing template[/usr/libexec/docker/docker-wait-ready] action create (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_base.rb line 111)
+[2018-04-08T20:43:17+05:30] INFO: template[/usr/libexec/docker/docker-wait-ready] created file /usr/libexec/docker/docker-wait-ready
+[2018-04-08T20:43:17+05:30] INFO: template[/usr/libexec/docker/docker-wait-ready] updated file contents /usr/libexec/docker/docker-wait-ready
+[2018-04-08T20:43:17+05:30] INFO: template[/usr/libexec/docker/docker-wait-ready] owner changed to 0
+[2018-04-08T20:43:17+05:30] INFO: template[/usr/libexec/docker/docker-wait-ready] group changed to 0
+[2018-04-08T20:43:17+05:30] INFO: template[/usr/libexec/docker/docker-wait-ready] mode changed to 755
+[2018-04-08T20:43:17+05:30] INFO: Processing template[/lib/systemd/system/docker.socket] action create (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_manager_systemd.rb line 13)
+[2018-04-08T20:43:17+05:30] INFO: template[/lib/systemd/system/docker.socket] created file /lib/systemd/system/docker.socket
+[2018-04-08T20:43:18+05:30] INFO: template[/lib/systemd/system/docker.socket] updated file contents /lib/systemd/system/docker.socket
+[2018-04-08T20:43:18+05:30] INFO: template[/lib/systemd/system/docker.socket] owner changed to 0
+[2018-04-08T20:43:18+05:30] INFO: template[/lib/systemd/system/docker.socket] group changed to 0
+[2018-04-08T20:43:18+05:30] INFO: template[/lib/systemd/system/docker.socket] mode changed to 644
+[2018-04-08T20:43:18+05:30] INFO: Processing template[/lib/systemd/system/docker.service] action create (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_manager_systemd.rb line 29)
+[2018-04-08T20:43:18+05:30] INFO: template[/lib/systemd/system/docker.service] created file /lib/systemd/system/docker.service
+[2018-04-08T20:43:18+05:30] INFO: template[/lib/systemd/system/docker.service] updated file contents /lib/systemd/system/docker.service
+[2018-04-08T20:43:18+05:30] INFO: template[/lib/systemd/system/docker.service] owner changed to 0
+[2018-04-08T20:43:18+05:30] INFO: template[/lib/systemd/system/docker.service] group changed to 0
+[2018-04-08T20:43:18+05:30] INFO: template[/lib/systemd/system/docker.service] mode changed to 644
+[2018-04-08T20:43:18+05:30] INFO: Processing template[/etc/systemd/system/docker.socket] action create (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_manager_systemd.rb line 44)
+[2018-04-08T20:43:18+05:30] INFO: template[/etc/systemd/system/docker.socket] created file /etc/systemd/system/docker.socket
+[2018-04-08T20:43:18+05:30] INFO: template[/etc/systemd/system/docker.socket] updated file contents /etc/systemd/system/docker.socket
+[2018-04-08T20:43:18+05:30] INFO: template[/etc/systemd/system/docker.socket] owner changed to 0
+[2018-04-08T20:43:18+05:30] INFO: template[/etc/systemd/system/docker.socket] group changed to 0
+[2018-04-08T20:43:18+05:30] INFO: template[/etc/systemd/system/docker.socket] mode changed to 644
+[2018-04-08T20:43:18+05:30] INFO: Processing template[/etc/systemd/system/docker.service] action create (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_manager_systemd.rb line 59)
+[2018-04-08T20:43:18+05:30] INFO: template[/etc/systemd/system/docker.service] created file /etc/systemd/system/docker.service
+[2018-04-08T20:43:18+05:30] INFO: template[/etc/systemd/system/docker.service] updated file contents /etc/systemd/system/docker.service
+[2018-04-08T20:43:18+05:30] INFO: template[/etc/systemd/system/docker.service] owner changed to 0
+[2018-04-08T20:43:18+05:30] INFO: template[/etc/systemd/system/docker.service] group changed to 0
+[2018-04-08T20:43:18+05:30] INFO: template[/etc/systemd/system/docker.service] mode changed to 644
+[2018-04-08T20:43:18+05:30] INFO: template[/etc/systemd/system/docker.service] sending run action to execute[systemctl daemon-reload] (immediate)
+[2018-04-08T20:43:18+05:30] INFO: Processing execute[systemctl daemon-reload] action run (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_manager_systemd.rb line 79)
+[2018-04-08T20:43:19+05:30] INFO: execute[systemctl daemon-reload] ran successfully
+[2018-04-08T20:43:19+05:30] INFO: template[/etc/systemd/system/docker.service] sending run action to execute[systemctl restart docker] (immediate)
+[2018-04-08T20:43:19+05:30] INFO: Processing execute[systemctl restart docker] action run (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_manager_systemd.rb line 85)
+[2018-04-08T20:43:19+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T20:43:19+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T20:43:19+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T20:43:19+05:30] ERROR: Running exception handlers
+[2018-04-08T20:43:19+05:30] ERROR: Exception handlers complete
+[2018-04-08T20:43:19+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T20:43:19+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T20:43:19+05:30] ERROR: docker_service[default] (filewrite::default line 10) had an error: Mixlib::ShellOut::ShellCommandFailed: docker_service_manager_systemd[default] (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service.rb line 75) had an error: Mixlib::ShellOut::ShellCommandFailed: execute[systemctl restart docker] (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_manager_systemd.rb line 85) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '1'
+---- Begin output of /bin/systemctl restart docker ----
+STDOUT: 
+STDERR: A dependency job for docker.service failed. See 'journalctl -xe' for details.
+---- End output of /bin/systemctl restart docker ----
+Ran /bin/systemctl restart docker returned 1
+[2018-04-08T20:43:19+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T20:49:48+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T20:49:48+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T20:49:48+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T20:49:48+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T20:49:48+05:30] INFO: Chef-client pid: 8030
+[2018-04-08T20:49:48+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T20:49:54+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T20:49:54+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T20:49:54+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T20:49:54+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T20:49:54+05:30] INFO: Running start handlers
+[2018-04-08T20:49:54+05:30] INFO: Start handlers complete.
+[2018-04-08T20:49:54+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T20:49:54+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T20:50:03+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T20:50:04+05:30] INFO: Processing yum_package[docker] action install (filewrite::default line 6)
+[2018-04-08T20:50:04+05:30] INFO: Processing docker_service[default] action create (filewrite::default line 10)
+[2018-04-08T20:50:04+05:30] INFO: Processing docker_installation_script[default] action create (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service.rb line 57)
+[2018-04-08T20:50:04+05:30] INFO: Processing yum_package[curl] action install (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_installation_script.rb line 32)
+[2018-04-08T20:50:14+05:30] INFO: Processing execute[install docker] action run (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_installation_script.rb line 34)
+[2018-04-08T20:50:14+05:30] INFO: Processing docker_service[default] action start (filewrite::default line 10)
+[2018-04-08T20:50:14+05:30] INFO: Processing docker_service_manager_systemd[default] action start (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service.rb line 75)
+[2018-04-08T20:50:14+05:30] INFO: Processing directory[/usr/libexec/docker] action create (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_base.rb line 104)
+[2018-04-08T20:50:14+05:30] INFO: Processing template[/usr/libexec/docker/docker-wait-ready] action create (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_base.rb line 111)
+[2018-04-08T20:50:15+05:30] INFO: Processing template[/lib/systemd/system/docker.socket] action create (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_manager_systemd.rb line 13)
+[2018-04-08T20:50:15+05:30] INFO: template[/lib/systemd/system/docker.socket] backed up to /home/shashank/chef-solo-example/chef/local-mode-cache/backup/lib/systemd/system/docker.socket.chef-20180408205015.093237
+[2018-04-08T20:50:15+05:30] INFO: template[/lib/systemd/system/docker.socket] updated file contents /lib/systemd/system/docker.socket
+[2018-04-08T20:50:15+05:30] INFO: Processing template[/lib/systemd/system/docker.service] action create (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_manager_systemd.rb line 29)
+[2018-04-08T20:50:15+05:30] INFO: Processing template[/etc/systemd/system/docker.socket] action create (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_manager_systemd.rb line 44)
+[2018-04-08T20:50:15+05:30] INFO: template[/etc/systemd/system/docker.socket] backed up to /home/shashank/chef-solo-example/chef/local-mode-cache/backup/etc/systemd/system/docker.socket.chef-20180408205015.335248
+[2018-04-08T20:50:15+05:30] INFO: template[/etc/systemd/system/docker.socket] updated file contents /etc/systemd/system/docker.socket
+[2018-04-08T20:50:15+05:30] INFO: Processing template[/etc/systemd/system/docker.service] action create (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_manager_systemd.rb line 59)
+[2018-04-08T20:50:15+05:30] INFO: template[/etc/systemd/system/docker.service] backed up to /home/shashank/chef-solo-example/chef/local-mode-cache/backup/etc/systemd/system/docker.service.chef-20180408205015.383234
+[2018-04-08T20:50:15+05:30] INFO: template[/etc/systemd/system/docker.service] updated file contents /etc/systemd/system/docker.service
+[2018-04-08T20:50:15+05:30] INFO: template[/etc/systemd/system/docker.service] sending run action to execute[systemctl daemon-reload] (immediate)
+[2018-04-08T20:50:15+05:30] INFO: Processing execute[systemctl daemon-reload] action run (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_manager_systemd.rb line 79)
+[2018-04-08T20:50:16+05:30] INFO: execute[systemctl daemon-reload] ran successfully
+[2018-04-08T20:50:16+05:30] INFO: template[/etc/systemd/system/docker.service] sending run action to execute[systemctl restart docker] (immediate)
+[2018-04-08T20:50:16+05:30] INFO: Processing execute[systemctl restart docker] action run (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_manager_systemd.rb line 85)
+[2018-04-08T20:50:16+05:30] INFO: execute[systemctl restart docker] ran successfully
+[2018-04-08T20:50:16+05:30] INFO: Processing execute[systemctl daemon-reload] action nothing (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_manager_systemd.rb line 79)
+[2018-04-08T20:50:16+05:30] INFO: Processing execute[systemctl restart docker] action nothing (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_manager_systemd.rb line 85)
+[2018-04-08T20:50:16+05:30] INFO: Processing service[docker] action enable (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_manager_systemd.rb line 91)
+[2018-04-08T20:50:16+05:30] INFO: service[docker] enabled
+[2018-04-08T20:50:16+05:30] INFO: Processing service[docker] action start (/home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/docker/libraries/docker_service_manager_systemd.rb line 91)
+[2018-04-08T20:50:17+05:30] INFO: service[docker] started
+[2018-04-08T20:50:17+05:30] INFO: Processing docker_image[redis] action pull (filewrite::default line 15)
+[2018-04-08T20:50:17+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T20:50:17+05:30] ERROR: Running exception handlers
+[2018-04-08T20:50:17+05:30] ERROR: Exception handlers complete
+[2018-04-08T20:50:17+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T20:50:17+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T20:50:17+05:30] ERROR: docker_image[redis] (filewrite::default line 15) had an error: Excon::Error::Socket: Connection refused - connect(2) for /var/run/docker.sock (Errno::ECONNREFUSED)
+[2018-04-08T20:50:17+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T20:51:55+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T20:51:55+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T20:51:55+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T20:51:55+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T20:51:55+05:30] INFO: Chef-client pid: 8507
+[2018-04-08T20:51:55+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T20:52:00+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T20:52:00+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T20:52:00+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T20:52:00+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T20:52:00+05:30] INFO: Running start handlers
+[2018-04-08T20:52:00+05:30] INFO: Start handlers complete.
+[2018-04-08T20:52:00+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T20:52:00+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T20:52:08+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T20:52:08+05:30] INFO: Processing yum_package[docker] action install (filewrite::default line 6)
+[2018-04-08T20:52:08+05:30] INFO: Processing service[docker] action enable (filewrite::default line 10)
+[2018-04-08T20:52:09+05:30] INFO: Processing service[docker] action start (filewrite::default line 10)
+[2018-04-08T20:52:09+05:30] INFO: service[docker] started
+[2018-04-08T20:52:09+05:30] INFO: Processing docker_image[redis] action pull (filewrite::default line 14)
+[2018-04-08T20:52:09+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T20:52:09+05:30] ERROR: Running exception handlers
+[2018-04-08T20:52:09+05:30] ERROR: Exception handlers complete
+[2018-04-08T20:52:10+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T20:52:10+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T20:52:10+05:30] ERROR: docker_image[redis] (filewrite::default line 14) had an error: Excon::Error::Socket: Connection reset by peer (Errno::ECONNRESET)
+[2018-04-08T20:52:10+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T20:53:23+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T20:53:23+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T20:53:23+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T20:53:23+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T20:53:23+05:30] INFO: Chef-client pid: 8834
+[2018-04-08T20:53:23+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T20:53:28+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T20:53:28+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T20:53:28+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T20:53:28+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T20:53:28+05:30] INFO: Running start handlers
+[2018-04-08T20:53:28+05:30] INFO: Start handlers complete.
+[2018-04-08T20:53:28+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T20:53:28+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T20:53:31+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T20:53:31+05:30] INFO: Processing yum_package[docker] action install (filewrite::default line 6)
+[2018-04-08T20:53:31+05:30] INFO: Processing service[docker] action enable (filewrite::default line 10)
+[2018-04-08T20:53:31+05:30] INFO: Processing service[docker] action start (filewrite::default line 10)
+[2018-04-08T20:53:32+05:30] INFO: service[docker] started
+[2018-04-08T20:53:32+05:30] INFO: Processing docker_image[redis] action pull (filewrite::default line 14)
+[2018-04-08T20:53:32+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T20:53:32+05:30] ERROR: Running exception handlers
+[2018-04-08T20:53:32+05:30] ERROR: Exception handlers complete
+[2018-04-08T20:53:32+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T20:53:32+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T20:53:32+05:30] ERROR: docker_image[redis] (filewrite::default line 14) had an error: Excon::Error::Socket: Connection reset by peer (Errno::ECONNRESET)
+[2018-04-08T20:53:32+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T21:00:41+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T21:00:41+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T21:00:41+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T21:00:41+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T21:00:41+05:30] INFO: Chef-client pid: 9290
+[2018-04-08T21:00:41+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T21:00:47+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T21:00:47+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T21:00:47+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T21:00:47+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T21:00:47+05:30] INFO: Running start handlers
+[2018-04-08T21:00:47+05:30] INFO: Start handlers complete.
+[2018-04-08T21:00:48+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T21:00:48+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T21:00:57+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T21:00:58+05:30] INFO: Processing yum_package[docker] action install (filewrite::default line 6)
+[2018-04-08T21:00:58+05:30] INFO: Processing service[docker] action enable (filewrite::default line 10)
+[2018-04-08T21:00:59+05:30] INFO: Processing service[docker] action start (filewrite::default line 10)
+[2018-04-08T21:00:59+05:30] INFO: service[docker] started
+[2018-04-08T21:00:59+05:30] INFO: Processing docker_image[redis] action pull (filewrite::default line 15)
+[2018-04-08T21:01:00+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T21:01:00+05:30] ERROR: Running exception handlers
+[2018-04-08T21:01:00+05:30] ERROR: Exception handlers complete
+[2018-04-08T21:01:00+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T21:01:00+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T21:01:00+05:30] ERROR: docker_image[redis] (filewrite::default line 15) had an error: Excon::Error::Socket: Connection reset by peer (Errno::ECONNRESET)
+[2018-04-08T21:01:00+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T21:02:34+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T21:02:34+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T21:02:34+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T21:02:34+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T21:02:34+05:30] INFO: Chef-client pid: 9673
+[2018-04-08T21:02:34+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T21:02:40+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T21:02:40+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T21:02:40+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T21:02:40+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T21:02:40+05:30] INFO: Running start handlers
+[2018-04-08T21:02:40+05:30] INFO: Start handlers complete.
+[2018-04-08T21:02:40+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T21:02:49+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T21:02:49+05:30] INFO: Processing yum_package[docker] action install (filewrite::default line 6)
+[2018-04-08T21:02:49+05:30] INFO: Processing service[docker] action enable (filewrite::default line 10)
+[2018-04-08T21:02:49+05:30] INFO: Processing service[docker] action start (filewrite::default line 10)
+[2018-04-08T21:02:50+05:30] INFO: service[docker] started
+[2018-04-08T21:02:50+05:30] INFO: Processing docker_image[redis] action pull (filewrite::default line 15)
+[2018-04-08T21:02:50+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T21:02:50+05:30] ERROR: Running exception handlers
+[2018-04-08T21:02:50+05:30] ERROR: Exception handlers complete
+[2018-04-08T21:02:51+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T21:02:51+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T21:02:51+05:30] ERROR: docker_image[redis] (filewrite::default line 15) had an error: Excon::Error::Socket: Connection reset by peer (Errno::ECONNRESET)
+[2018-04-08T21:02:51+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T21:08:18+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T21:08:18+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T21:08:18+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T21:08:18+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T21:08:18+05:30] INFO: Chef-client pid: 10060
+[2018-04-08T21:08:18+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T21:08:23+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T21:08:23+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T21:08:23+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T21:08:23+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T21:08:23+05:30] INFO: Running start handlers
+[2018-04-08T21:08:23+05:30] INFO: Start handlers complete.
+[2018-04-08T21:08:23+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T21:08:23+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T21:08:26+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/..............
+Fetching version metadata from https://www.rubygems.org/.
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T21:08:27+05:30] INFO: Processing yum_package[docker] action install (filewrite::default line 6)
+[2018-04-08T21:08:27+05:30] INFO: Processing service[docker] action enable (filewrite::default line 10)
+[2018-04-08T21:08:27+05:30] INFO: Processing service[docker] action start (filewrite::default line 10)
+[2018-04-08T21:08:28+05:30] INFO: service[docker] started
+[2018-04-08T21:08:28+05:30] INFO: Processing docker_image[redis] action pull_if_missing (filewrite::default line 15)
+[2018-04-08T21:08:28+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T21:08:28+05:30] ERROR: Running exception handlers
+[2018-04-08T21:08:28+05:30] ERROR: Exception handlers complete
+[2018-04-08T21:08:28+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T21:08:28+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T21:08:28+05:30] ERROR: docker_image[redis] (filewrite::default line 15) had an error: Excon::Error::Socket: Connection reset by peer (Errno::ECONNRESET)
+[2018-04-08T21:08:28+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T21:09:32+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T21:09:32+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T21:09:32+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T21:09:32+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T21:09:32+05:30] INFO: Chef-client pid: 10447
+[2018-04-08T21:09:32+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T21:09:38+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T21:09:38+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T21:09:38+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T21:09:38+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T21:09:38+05:30] INFO: Running start handlers
+[2018-04-08T21:09:38+05:30] INFO: Start handlers complete.
+[2018-04-08T21:09:38+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T21:09:38+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T21:09:47+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T21:09:47+05:30] ERROR: Running exception handlers
+[2018-04-08T21:09:47+05:30] ERROR: Exception handlers complete
+[2018-04-08T21:09:47+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T21:09:47+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T21:09:47+05:30] ERROR: Property tag must be one of: String!  You passed :latest.
+[2018-04-08T21:09:47+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T21:13:02+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T21:13:02+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T21:13:02+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T21:13:02+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T21:13:02+05:30] INFO: Chef-client pid: 10764
+[2018-04-08T21:13:02+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T21:13:07+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T21:13:07+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T21:13:07+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T21:13:07+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T21:13:07+05:30] INFO: Running start handlers
+[2018-04-08T21:13:07+05:30] INFO: Start handlers complete.
+[2018-04-08T21:13:08+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T21:13:08+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T21:13:15+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T21:13:15+05:30] INFO: Processing yum_package[docker] action install (filewrite::default line 6)
+[2018-04-08T21:13:15+05:30] INFO: Processing service[docker] action enable (filewrite::default line 10)
+[2018-04-08T21:13:16+05:30] INFO: Processing service[docker] action start (filewrite::default line 10)
+[2018-04-08T21:13:16+05:30] INFO: service[docker] started
+[2018-04-08T21:13:16+05:30] INFO: Processing docker_image[redis] action pull (filewrite::default line 15)
+[2018-04-08T21:13:16+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T21:13:16+05:30] ERROR: Running exception handlers
+[2018-04-08T21:13:16+05:30] ERROR: Exception handlers complete
+[2018-04-08T21:13:16+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T21:13:16+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T21:13:16+05:30] ERROR: docker_image[redis] (filewrite::default line 15) had an error: Excon::Error::Socket: Connection reset by peer (Errno::ECONNRESET)
+[2018-04-08T21:13:17+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T21:18:12+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T21:18:12+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T21:18:12+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T21:18:12+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T21:18:12+05:30] INFO: Chef-client pid: 11360
+[2018-04-08T21:18:12+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T21:18:17+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T21:18:17+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T21:18:17+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T21:18:17+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T21:18:17+05:30] INFO: Running start handlers
+[2018-04-08T21:18:17+05:30] INFO: Start handlers complete.
+[2018-04-08T21:18:17+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T21:18:17+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T21:18:24+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T21:18:24+05:30] INFO: Processing yum_package[docker] action install (filewrite::default line 6)
+[2018-04-08T21:18:24+05:30] INFO: Processing service[docker] action enable (filewrite::default line 10)
+[2018-04-08T21:18:24+05:30] INFO: Processing service[docker] action start (filewrite::default line 10)
+[2018-04-08T21:18:24+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T21:18:24+05:30] ERROR: Running exception handlers
+[2018-04-08T21:18:24+05:30] ERROR: Exception handlers complete
+[2018-04-08T21:18:24+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T21:18:24+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T21:18:24+05:30] ERROR: service[docker] (filewrite::default line 10) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '1'
+---- Begin output of /bin/systemctl --system start docker ----
+STDOUT: 
+STDERR: Job for docker.service failed because start of the service was attempted too often. See "systemctl status docker.service" and "journalctl -xe" for details.
+To force a start use "systemctl reset-failed docker.service" followed by "systemctl start docker.service" again.
+---- End output of /bin/systemctl --system start docker ----
+Ran /bin/systemctl --system start docker returned 1
+[2018-04-08T21:18:24+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-08T21:19:48+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-08T21:19:48+05:30] INFO: Forking chef instance to converge...
+[2018-04-08T21:19:48+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-08T21:19:48+05:30] INFO: Platform: x86_64-linux
+[2018-04-08T21:19:48+05:30] INFO: Chef-client pid: 11734
+[2018-04-08T21:19:48+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-08T21:19:52+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-08T21:19:52+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-08T21:19:52+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-08T21:19:52+05:30] INFO: Starting Chef Run for localhost
+[2018-04-08T21:19:52+05:30] INFO: Running start handlers
+[2018-04-08T21:19:52+05:30] INFO: Start handlers complete.
+[2018-04-08T21:19:52+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-08T21:19:52+05:30] INFO: Storing updated cookbooks/filewrite/recipes/default.rb in the cache.
+[2018-04-08T21:19:56+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/...............
+Fetching version metadata from https://www.rubygems.org/..
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-08T21:19:56+05:30] INFO: Processing yum_package[docker] action install (filewrite::default line 6)
+[2018-04-08T21:19:57+05:30] INFO: Processing service[docker] action enable (filewrite::default line 10)
+[2018-04-08T21:19:57+05:30] INFO: Processing service[docker] action start (filewrite::default line 10)
+[2018-04-08T21:19:57+05:30] INFO: service[docker] started
+[2018-04-08T21:19:57+05:30] INFO: Processing docker_image[redis] action pull (filewrite::default line 15)
+[2018-04-08T21:19:58+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-08T21:19:58+05:30] ERROR: Running exception handlers
+[2018-04-08T21:19:58+05:30] ERROR: Exception handlers complete
+[2018-04-08T21:19:58+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-08T21:19:58+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-08T21:19:58+05:30] ERROR: docker_image[redis] (filewrite::default line 15) had an error: Excon::Error::Socket: Connection reset by peer (Errno::ECONNRESET)
+[2018-04-08T21:19:58+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-09T10:13:12+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-09T10:13:12+05:30] INFO: Forking chef instance to converge...
+[2018-04-09T10:13:12+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-09T10:13:12+05:30] INFO: Platform: x86_64-linux
+[2018-04-09T10:13:12+05:30] INFO: Chef-client pid: 2764
+[2018-04-09T10:13:12+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-09T10:13:19+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-09T10:13:19+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-09T10:13:19+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-09T10:13:19+05:30] INFO: Starting Chef Run for localhost
+[2018-04-09T10:13:19+05:30] INFO: Running start handlers
+[2018-04-09T10:13:19+05:30] INFO: Start handlers complete.
+[2018-04-09T10:13:19+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-09T10:13:19+05:30] ERROR: Running exception handlers
+[2018-04-09T10:13:19+05:30] ERROR: Exception handlers complete
+[2018-04-09T10:13:19+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-09T10:13:19+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-09T10:13:19+05:30] ERROR: Permission denied @ rb_sysopen - /home/shashank/chef-solo-example/chef/.chef/cache/cookbooks/filewrite/recipes/default.rb
+[2018-04-09T10:13:19+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-09T10:13:42+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-09T10:13:42+05:30] INFO: Forking chef instance to converge...
+[2018-04-09T10:13:42+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-09T10:13:42+05:30] INFO: Platform: x86_64-linux
+[2018-04-09T10:13:42+05:30] INFO: Chef-client pid: 3036
+[2018-04-09T10:13:42+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-09T10:13:47+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-09T10:13:47+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-09T10:13:47+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-09T10:13:47+05:30] INFO: Starting Chef Run for localhost
+[2018-04-09T10:13:47+05:30] INFO: Running start handlers
+[2018-04-09T10:13:47+05:30] INFO: Start handlers complete.
+[2018-04-09T10:13:47+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-09T10:13:50+05:30] ERROR: Running exception handlers
+[2018-04-09T10:13:50+05:30] ERROR: Exception handlers complete
+[2018-04-09T10:13:50+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-09T10:13:50+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-09T10:13:50+05:30] ERROR: Expected process to exit with [0], but received '17'
+---- Begin output of bundle install ----
+STDOUT: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching source index from https://www.rubygems.org/
+
+Retrying fetcher due to error (2/4): Bundler::HTTPError Could not fetch specs from https://www.rubygems.org/
+Retrying fetcher due to error (3/4): Bundler::HTTPError Could not fetch specs from https://www.rubygems.org/
+Retrying fetcher due to error (4/4): Bundler::HTTPError Could not fetch specs from https://www.rubygems.org/
+Could not fetch specs from https://www.rubygems.org/
+STDERR: 
+---- End output of bundle install ----
+Ran bundle install returned 17
+[2018-04-09T10:13:50+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+[2018-04-09T10:16:55+05:30] INFO: Started chef-zero at chefzero://localhost:1 with repository at /home/shashank/chef-solo-example/chef
+  One version per cookbook
+
+[2018-04-09T10:16:55+05:30] INFO: Forking chef instance to converge...
+[2018-04-09T10:16:55+05:30] INFO: *** Chef 13.2.20 ***
+[2018-04-09T10:16:55+05:30] INFO: Platform: x86_64-linux
+[2018-04-09T10:16:55+05:30] INFO: Chef-client pid: 3636
+[2018-04-09T10:16:55+05:30] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-04-09T10:17:18+05:30] INFO: Setting the run_list to ["recipe[filewrite::default]"] from CLI options
+[2018-04-09T10:17:18+05:30] INFO: Run List is [recipe[filewrite::default]]
+[2018-04-09T10:17:18+05:30] INFO: Run List expands to [filewrite::default]
+[2018-04-09T10:17:18+05:30] INFO: Starting Chef Run for localhost
+[2018-04-09T10:17:18+05:30] INFO: Running start handlers
+[2018-04-09T10:17:18+05:30] INFO: Start handlers complete.
+[2018-04-09T10:17:21+05:30] INFO: Loading cookbooks [filewrite@0.1.0, docker@4.1.1]
+[2018-04-09T10:17:39+05:30] INFO: Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+Fetching gem metadata from https://www.rubygems.org/..............
+Fetching version metadata from https://www.rubygems.org/.
+Resolving dependencies...
+Using excon 0.62.0
+Using multi_json 1.13.1
+Using bundler 1.15.1
+Using docker-api 1.34.0
+Bundle complete! 1 Gemfile dependency, 4 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2018-04-09T10:17:40+05:30] INFO: Processing yum_package[docker] action install (filewrite::default line 6)
+[2018-04-09T10:17:40+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2018-04-09T10:17:40+05:30] ERROR: Running exception handlers
+[2018-04-09T10:17:40+05:30] ERROR: Exception handlers complete
+[2018-04-09T10:17:40+05:30] FATAL: Stacktrace dumped to /home/shashank/chef-solo-example/chef/.chef/cache/chef-stacktrace.out
+[2018-04-09T10:17:40+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-04-09T10:17:40+05:30] ERROR: yum_package[docker] (filewrite::default line 6) had an error: Errno::ENOENT: No such file or directory - docker
+[2018-04-09T10:17:41+05:30] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
