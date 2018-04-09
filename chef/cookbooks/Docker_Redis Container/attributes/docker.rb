@@ -1,0 +1,12 @@
+default['Docker_Redis Container']['package']['name'] = "docker"
+default['Docker_Redis Container']['docker']['version'] = "1.13.1-53.git774336d.el7.centos"
+default['Docker_Redis Container']['service']['name'] = "docker"
+default['Docker_Redis Container']['docker_image']['name'] = "redis"
+default['Docker_Redis Container']['docker_image']['tag'] = "3.2.11"
+default['Docker_Redis Container']['docker_container']['name'] = "redis-container"
+default['Docker_Redis Container']['docker_container']['image'] = "redis"
+default['Docker_Redis Container']['docker_container']['container_name'] = "redis-container"
+default['Docker_Redis Container']['docker_container']['detach'] = "true"
+default['Docker_Redis Container']['docker_container']['port'] = "6379:6379"
+default['Docker_Redis Container']['execute']['name'] = "status"
+
