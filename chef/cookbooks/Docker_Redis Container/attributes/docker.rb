@@ -1,5 +1,5 @@
 default['Docker_Redis Container']['package']['name'] = "docker"
-default['Docker_Redis Container']['docker']['version'] = "1.13.1-53.git774336d.el7.centos"
+default['Docker_Redis Container']['package']['version'] = "1.13.1-53.git774336d.el7.centos"
 default['Docker_Redis Container']['service']['name'] = "docker"
 default['Docker_Redis Container']['docker_image']['name'] = "redis"
 default['Docker_Redis Container']['docker_image']['tag'] = "3.2.11"

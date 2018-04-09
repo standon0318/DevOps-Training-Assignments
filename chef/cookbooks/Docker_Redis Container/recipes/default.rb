@@ -7,8 +7,8 @@
 #github path for docker cookbook https://github.com/chef-cookbooks/docker.git
 
 #getting docker package and installing
-package node[Docker_Redis Container']['package']['name'] do
-	version node['Docker_Redis Container']['docker']['version']
+package node['Docker_Redis Container']['package']['name'] do
+	version node['Docker_Redis Container']['package']['version']
 	action :install
 end
 
@@ -31,6 +31,4 @@ docker_container node['Docker_Redis Container']['docker_container']['name'] do
 	port node['Docker_Redis Container']['docker_container']['port']
 	action :create
 end
-execute node['Docker_Redis Container']['execute']['name'] do
-	command 'docker ps -a'
-end
+
