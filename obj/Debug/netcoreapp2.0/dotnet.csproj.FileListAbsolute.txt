@@ -1,0 +1,10 @@
+/home/ubuntu/dotnet/bin/Debug/netcoreapp2.0/dotnet.deps.json
+/home/ubuntu/dotnet/bin/Debug/netcoreapp2.0/dotnet.runtimeconfig.json
+/home/ubuntu/dotnet/bin/Debug/netcoreapp2.0/dotnet.runtimeconfig.dev.json
+/home/ubuntu/dotnet/bin/Debug/netcoreapp2.0/dotnet.dll
+/home/ubuntu/dotnet/bin/Debug/netcoreapp2.0/dotnet.pdb
+/home/ubuntu/dotnet/obj/Debug/netcoreapp2.0/dotnet.csproj.CoreCompileInputs.cache
+/home/ubuntu/dotnet/obj/Debug/netcoreapp2.0/dotnet.AssemblyInfoInputs.cache
+/home/ubuntu/dotnet/obj/Debug/netcoreapp2.0/dotnet.AssemblyInfo.cs
+/home/ubuntu/dotnet/obj/Debug/netcoreapp2.0/dotnet.dll
+/home/ubuntu/dotnet/obj/Debug/netcoreapp2.0/dotnet.pdb
