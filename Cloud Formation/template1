@@ -1,0 +1,119 @@
+{
+	"AWSTemplateFormatVersion": "2010-09-09",
+	"Description": "A sample template for ec2",
+	"Parameters":
+	{
+		"keyPair": 
+		{
+			"Type": "AWS::EC2::KeyPair::KeyName"
+		}
+	},
+	"Resources":
+	{
+		"DemoEC2Instance": 
+		{
+			"Type": "AWS::EC2::Instance",
+			"Properties":
+			{
+				"ImageId": "ami-2f726546",
+				"InstanceType": "t2.micro",
+				"KeyName": 
+				{
+					"Ref": "keyPair"
+				},
+				"NetworkInterfaces":[{
+
+"GroupSet":[{
+"Ref":"SgDemo"}],
+"DeviceIndex":"0",
+"AssociatePublicIpaddress":"true",
+"DeleteOnTermination":"true",
+"SubnetId":"subnet-413ade1d"}],
+"IamInstanceProfile" : {
+        "Ref" : "ListS3BucketsInstanceProfile"
+       	}
+}
+},
+		}
+        }		 
+		"SgDemo": {
+			"Type": "AWS::EC2::SecurityGroup",
+			"Properties": {
+				"GroupDescription": "Enable ssh and hhtp in instance",
+				"SecurityGroupIngress": [{
+						"IpProtocol": "tcp",
+						"FromPort": "22",
+						"ToPort": "22",
+						"CidrIp": "0.0.0.0/0"
+					},
+					{
+						"IpProtocol": "tcp",
+						"FromPort": "80",
+						"ToPort": "80",
+						"CidrIp": "0.0.0.0/0"
+					}
+				]
+			}
+		}
+		ListS3BucketsInstanceProfile" : {
+     	"Type" : "AWS::IAM::InstanceProfile",
+     	"Properties" : {
+      "Path" : "/",
+      "Roles" : [
+         	{
+          "Ref" : "ListS3BucketsRole"
+       	}
+      ]
+    }
+},
+"ListS3BucketsPolicy" : {
+     	"Type" : "AWS::IAM::Policy",
+     	"Properties" : {
+      "PolicyName" : "ListS3BucketsPolicy",
+      "PolicyDocument" : {
+        "Statement" : [
+           	{
+            "Effect" : "Allow",
+             	"Action" : [
+              "s3:List*"
+             	   ],
+             	"Resource" : "*"
+           	}
+         	]
+},
+       "Roles" : [
+         {
+           "Ref" : "ListS3BucketsRole"
+         }
+       ]
+     }
+   },
+"ListS3BucketsRole" : {
+     "Type" : "AWS::IAM::Role",
+     "Properties" : {
+       "AssumeRolePolicyDocument": {
+         "Version" : "2012-10-17",
+         "Statement" : [
+           {
+             "Effect" : "Allow",
+             "Principal" : {
+               "Service" : ["ec2.amazonaws.com"]
+             },
+             "Action" : [
+               "sts:AssumeRole"
+             ]
+           }
+         ]
+       },
+       "Path" : "/"
+     }
+   }
+ }
+
+
+}
+}
+}
+	}
+}
+}
