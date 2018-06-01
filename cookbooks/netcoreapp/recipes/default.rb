@@ -10,12 +10,13 @@ aws_s3_file '/home/project.tar.gz' do
  action :create_if_missing
 end
 bash 'extract_some_tar' do
-code <<-EOH 
-sudo cp /home/project.tar.gz /opt/app
+code <<-EOH
+cd /opt
+mkdir app 
+cp /home/project.tar.gz /opt/app
 cd opt/app/
 tar xzvf project.tar.gz
 cd 
-sudo su root
 dotnet /opt/app/project/bin/Release/netcoreapp2.0/project.dll
 EOH
 end
