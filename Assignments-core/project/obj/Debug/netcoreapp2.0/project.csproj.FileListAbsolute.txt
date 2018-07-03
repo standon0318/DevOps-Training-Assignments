@@ -8,3 +8,13 @@
 /home/ubuntu/project/obj/Debug/netcoreapp2.0/project.AssemblyInfo.cs
 /home/ubuntu/project/obj/Debug/netcoreapp2.0/project.dll
 /home/ubuntu/project/obj/Debug/netcoreapp2.0/project.pdb
+D:\DevOps-Training-Assignments\Assignments-core\project\bin\Debug\netcoreapp2.0\project.deps.json
+D:\DevOps-Training-Assignments\Assignments-core\project\bin\Debug\netcoreapp2.0\project.runtimeconfig.json
+D:\DevOps-Training-Assignments\Assignments-core\project\bin\Debug\netcoreapp2.0\project.runtimeconfig.dev.json
+D:\DevOps-Training-Assignments\Assignments-core\project\bin\Debug\netcoreapp2.0\project.dll
+D:\DevOps-Training-Assignments\Assignments-core\project\bin\Debug\netcoreapp2.0\project.pdb
+D:\DevOps-Training-Assignments\Assignments-core\project\obj\Debug\netcoreapp2.0\project.csproj.CoreCompileInputs.cache
+D:\DevOps-Training-Assignments\Assignments-core\project\obj\Debug\netcoreapp2.0\project.AssemblyInfoInputs.cache
+D:\DevOps-Training-Assignments\Assignments-core\project\obj\Debug\netcoreapp2.0\project.AssemblyInfo.cs
+D:\DevOps-Training-Assignments\Assignments-core\project\obj\Debug\netcoreapp2.0\project.dll
+D:\DevOps-Training-Assignments\Assignments-core\project\obj\Debug\netcoreapp2.0\project.pdb

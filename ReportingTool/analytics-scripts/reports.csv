@@ -1,2 +1,2 @@
-Account_ID,EC2_Untagged_Instances,EC2_Running_Instances,EC2_Stopped_Instances,Autocsaling_Unused_LC,Users_without_MFA
-346319152574,0,49,10,9,9
+Account_ID,EC2_Untagged_Instances,EC2_Running_Instances,EC2_Stopped_Instances,Autocsaling_Unused_LC,Users_without_MFA,S3_Public_Read,S3_Public_Write,S3_Public_FullAccess
+346319152574,0,39,8,9,9,2,0,0

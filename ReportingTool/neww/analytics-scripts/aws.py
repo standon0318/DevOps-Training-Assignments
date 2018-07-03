@@ -4,7 +4,6 @@ import csv
 from iam import *
 from ec2 import *
 from autoscaling import *
-from emailReport import *
 from s3 import *
 
 
@@ -30,6 +29,7 @@ def main():
         public_accessed_read_buckets_count, public_accessed_write_buckets_count, public_accessed_fullaccess_buckets_count = s3_public_buckets_count(s3_client)
         writer.writerow({'Account_ID': account_id, 'EC2_Untagged_Instances': untagged_count, 'EC2_Running_Instances': running_instance_count, 'EC2_Stopped_Instances': stopped_instance_count, 'Autocsaling_Unused_LC': unused_lc_count, 'Users_without_MFA': users_without_mfa_count, 'S3_Public_Read': public_accessed_read_buckets_count, 'S3_Public_Write': public_accessed_write_buckets_count, 'S3_Public_FullAccess': public_accessed_fullaccess_buckets_count })
         csvfile.close()
-        send_report_email("reports.csv")
+        return csvfile
+       
 if __name__ == '__main__':
     main()
