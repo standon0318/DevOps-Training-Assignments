@@ -1,0 +1,21 @@
+[Unit]
+Description=elasticsearch service
+After=network.target
+
+
+[Service]
+User=<%= node['elasticsearch']['user'] %>
+Group=<%= node['elasticsearch']['user'] %>
+export ES_HEAP_SIZE='512m'
+export ES_HOME="<%= node['elasticsearch']['home_dir']%>"
+DAEMON="${ES_HOME}/bin/elasticsearch"
+CONFIG_DIR="<%= node['elasticsearch']['config_dir']%>"
+LOG_DIR="<%= node['elasticsearch']['log_dir']%>"
+DATA_DIR="<%= node['elasticsearch']['data_dir']%>"
+ExecStart=<%= node['elasticsearch']['home_dir'] %>/bin/elasticsearch %> -Des.path.conf=${CONFIG_DIR} -Des.path.home=${ES_HOME} -Des.path.logs=${LOG_DIR} -Des.path.data=${DATA_DIR}
+Restart=on-abort
+
+
+[Install]
+WantedBy=multi-user.target
+Alias=elasticsearch.service

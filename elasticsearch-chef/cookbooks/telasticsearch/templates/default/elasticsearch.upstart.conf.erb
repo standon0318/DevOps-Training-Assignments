@@ -1,0 +1,12 @@
+description "elasticsearch service"
+author "vtripathi@tavisca.com"
+
+env USER=<%= node['elasticsearch']['user'] %>
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+#expect fork
+respawn
+
+exec sudo -u $USER /bin/sh -c "export ES_HEAP_SIZE=<%= node['elasticsearch']['ES_HEAP_SIZE'] %> && <%= node['elasticsearch']['home_dir'] %>/bin/elasticsearch -Des.path.conf=<%= node['elasticsearch']['config_dir']%> -Des.path.home=<%= node['elasticsearch']['home_dir']%> -Des.path.logs=<%= node['elasticsearch']['log_dir']%> -Des.path.data=<%= node['elasticsearch']['data_dir']%>"
