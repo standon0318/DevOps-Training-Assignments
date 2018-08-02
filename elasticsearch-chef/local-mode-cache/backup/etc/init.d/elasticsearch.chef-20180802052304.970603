@@ -32,12 +32,12 @@ if [ -f /etc/rc.d/init.d/functions ]; then
 fi
 
 # Sets the default values for elasticsearch variables used in this script
-ES_HOME=<%=node['elasticsearch']['home']%>
-MAX_OPEN_FILES=<%=node['elasticsearch']['service']['MAXOPENFILE']%>
+ES_HOME=/opt/elasticsearch
+MAX_OPEN_FILES=#{node['elasticsearch']['service']['MAXOPENFILE']}
 MAX_MAP_COUNT=262144
-ES_PATH_CONF=<%=node['elasticsearch']['home']%>/config
+ES_PATH_CONF=#{node['elasticsearch']['home']}/config
 
-PID_DIR=<%=node['elasticsearch']['service']['pid']['path']%>
+PID_DIR=#{node['elasticsearch']['service']['pid']['path']}
 
 # Source the default env file
 ES_ENV_FILE="/etc/sysconfig/"

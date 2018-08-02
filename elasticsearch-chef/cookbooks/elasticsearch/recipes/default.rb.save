@@ -107,9 +107,9 @@ bash 'download_and_install_elasticsearch_plugin' do
 
     sudo wget #{node['ec2plugin']['download']['url']}
 
-   sudo bin/elasticsearch-plugin -y  install file:///opt/elasticsearch/discovery-ec2-6.3.1.zip
+   sudo bin/elasticsearch-plugin install file:///opt/elasticsearch/discovery-ec2-6.3.1.zip
   EOH
-  not_if { ::File.exist?(node['elasticsearch']['home']) }
+#  not_if { ::File.exist?(node['elasticsearch']['home']) }
 end
 
 #Populating seeds(all nodes in cluster) ipaddress in elasticsearch.yaml

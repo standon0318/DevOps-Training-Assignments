@@ -1,0 +1,98 @@
+Generated at 2018-08-02 05:16:28 +0000
+Mixlib::ShellOut::ShellCommandFailed: service[elasticsearch] (elasticsearch::default line 138) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '1'
+---- Begin output of /sbin/service elasticsearch start ----
+STDOUT: Starting elasticsearch: [FAILED]
+STDERR: /etc/init.d/elasticsearch: line 87: ulimit: #{node[elasticsearch][service][MAXOPENFILE]}: invalid number
+/opt/elasticsearch/bin/elasticsearch-env: line 78: cd: #{node[elasticsearch][home]}/config: No such file or directory
+Exception in thread "main" java.nio.file.NoSuchFileException: /opt/elasticsearch/jvm.options
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
+	at java.nio.file.Files.newInputStream(Files.java:152)
+	at org.elasticsearch.tools.launchers.JvmOptionsParser.main(JvmOptionsParser.java:58)
+---- End output of /sbin/service elasticsearch start ----
+Ran /sbin/service elasticsearch start returned 1
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/mixlib-shellout-2.3.2/lib/mixlib/shellout.rb:293:in `invalid!'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/mixlib-shellout-2.3.2/lib/mixlib/shellout.rb:280:in `error!'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/mixin/shell_out.rb:124:in `shell_out!'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider/service/init.rb:59:in `start_service'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider/service.rb:135:in `block in action_start'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/mixin/why_run.rb:51:in `add_action'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider.rb:227:in `converge_by'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider/service.rb:134:in `action_start'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider.rb:182:in `run_action'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/resource.rb:577:in `run_action'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:70:in `run_action'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:128:in `run_delayed_notification'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:116:in `block in run_delayed_notifications'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:115:in `each'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:115:in `run_delayed_notifications'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:105:in `converge'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:717:in `block in converge'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:712:in `catch'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:712:in `converge'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:751:in `converge_and_save'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:283:in `run'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:303:in `run_with_graceful_exit_option'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:279:in `block in run_chef_client'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:261:in `run_chef_client'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application/client.rb:441:in `run_application'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:66:in `run'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application/solo.rb:224:in `run'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/bin/chef-solo:25:in `<top (required)>'
+/usr/bin/chef-solo:75:in `load'
+/usr/bin/chef-solo:75:in `<main>'
+
+>>>> Caused by Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '1'
+---- Begin output of /sbin/service elasticsearch start ----
+STDOUT: Starting elasticsearch: [FAILED]
+STDERR: /etc/init.d/elasticsearch: line 87: ulimit: #{node[elasticsearch][service][MAXOPENFILE]}: invalid number
+/opt/elasticsearch/bin/elasticsearch-env: line 78: cd: #{node[elasticsearch][home]}/config: No such file or directory
+Exception in thread "main" java.nio.file.NoSuchFileException: /opt/elasticsearch/jvm.options
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
+	at java.nio.file.Files.newInputStream(Files.java:152)
+	at org.elasticsearch.tools.launchers.JvmOptionsParser.main(JvmOptionsParser.java:58)
+---- End output of /sbin/service elasticsearch start ----
+Ran /sbin/service elasticsearch start returned 1
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/mixlib-shellout-2.3.2/lib/mixlib/shellout.rb:293:in `invalid!'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/mixlib-shellout-2.3.2/lib/mixlib/shellout.rb:280:in `error!'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/mixin/shell_out.rb:124:in `shell_out!'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider/service/init.rb:59:in `start_service'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider/service.rb:135:in `block in action_start'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/mixin/why_run.rb:51:in `add_action'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider.rb:227:in `converge_by'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider/service.rb:134:in `action_start'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/provider.rb:182:in `run_action'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/resource.rb:577:in `run_action'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:70:in `run_action'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:128:in `run_delayed_notification'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:116:in `block in run_delayed_notifications'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:115:in `each'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:115:in `run_delayed_notifications'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/runner.rb:105:in `converge'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:717:in `block in converge'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:712:in `catch'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:712:in `converge'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:751:in `converge_and_save'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:283:in `run'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:303:in `run_with_graceful_exit_option'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:279:in `block in run_chef_client'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:261:in `run_chef_client'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application/client.rb:441:in `run_application'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:66:in `run'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application/solo.rb:224:in `run'
+/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/bin/chef-solo:25:in `<top (required)>'
+/usr/bin/chef-solo:75:in `load'
+/usr/bin/chef-solo:75:in `<main>'

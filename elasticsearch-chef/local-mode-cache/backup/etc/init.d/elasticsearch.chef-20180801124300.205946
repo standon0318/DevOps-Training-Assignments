@@ -1,3 +1,4 @@
+
 #!/bin/bash
 #
 #  <summary>
@@ -32,15 +33,15 @@ if [ -f /etc/rc.d/init.d/functions ]; then
 fi
 
 # Sets the default values for elasticsearch variables used in this script
-ES_HOME=<%=node['elasticsearch']['home']%>
-MAX_OPEN_FILES=<%=node['elasticsearch']['service']['MAXOPENFILE']%>
+ES_HOME=#{node['elasticsearch']['home']}
+MAX_OPEN_FILES=#{node['elasticsearch']['service']['MAXOPENFILE']}
 MAX_MAP_COUNT=262144
-ES_PATH_CONF=<%=node['elasticsearch']['home']%>/config
+ES_PATH_CONF=#{node['elasticsearch']['home']}/conf
 
-PID_DIR=<%=node['elasticsearch']['service']['pid']['path']%>
+PID_DIR=#{node['elasticsearch']['service']['pid']['path']}
 
 # Source the default env file
-ES_ENV_FILE="/etc/sysconfig/"
+ES_ENV_FILE="/etc/sysconfig/elasticsearch"
 if [ -f "$ES_ENV_FILE" ]; then
     . "$ES_ENV_FILE"
 fi
@@ -54,6 +55,7 @@ fi
 exec="$ES_HOME/bin/elasticsearch"
 prog="elasticsearch"
 pidfile="$PID_DIR/${prog}.pid"
+
 export ES_JAVA_OPTS
 export JAVA_HOME
 export ES_PATH_CONF
@@ -74,7 +76,7 @@ checkJava() {
     fi
 
     if [ ! -x "$JAVA" ]; then
-       echo "Could not find any executable java binary. Please install java in your PATH or set JAVA_HOME"
+        echo "Could not find any executable java binary. Please install java in your PATH or set JAVA_HOME"
         exit 1
     fi
 }
@@ -94,8 +96,7 @@ start() {
     fi
 
     # Ensure that the PID_DIR exists (it is cleaned at OS startup time)
-
-if [ -n "$PID_DIR" ] && [ ! -e "$PID_DIR" ]; then
+    if [ -n "$PID_DIR" ] && [ ! -e "$PID_DIR" ]; then
         mkdir -p "$PID_DIR" && chown elasticsearch:elasticsearch "$PID_DIR"
     fi
     if [ -n "$pidfile" ] && [ ! -e "$pidfile" ]; then
@@ -115,8 +116,7 @@ if [ -n "$PID_DIR" ] && [ ! -e "$PID_DIR" ]; then
 stop() {
     echo -n $"Stopping $prog: "
     # stop it here, often "killproc $prog"
-
-   killproc -p $pidfile -d 86400 $prog
+    killproc -p $pidfile -d 86400 $prog
     retval=$?
     echo
     [ $retval -eq 0 ] && rm -f $lockfile
@@ -135,7 +135,6 @@ reload() {
 force_reload() {
     restart
 }
-
 
 rh_status() {
     # run checks to determine if the service is running or use generic status
@@ -178,6 +177,4 @@ case "$1" in
         exit 2
 esac
 exit $?
-
-
 

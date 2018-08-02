@@ -1,0 +1,11 @@
+{
+	"name": "trainee",
+	"override_attributes": {
+		"filewrite": {
+			"file": {
+				"path": "C:/Chef/trainee.txt",
+				"content": "Modified By Trainee environment"
+			}
+		}
+	}
+}

@@ -14,16 +14,13 @@
 #
 # Use a descriptive name for your cluster:
 #
-cluster.name: #{node[elasticsearch]['cluster_name']}
-#
+#cluster.name: my-application
 #
 # ------------------------------------ Node ------------------------------------
 #
 # Use a descriptive name for the node:
 #
-node.name: "Travel-qa-datanode-3"
-node.master: false
-node.data: true
+#node.name: node-1
 #
 # Add custom attributes to the node:
 #
@@ -31,19 +28,13 @@ node.data: true
 #
 # ----------------------------------- Paths ------------------------------------
 #
-# Path to directory where to store the data (separate multiple locations by comma)
+# Path to directory where to store the data (separate multiple locations by comma):
 #
-#
-
-path.data: #{node['elasticsearch']['directory']['data']}
-
+#path.data: /path/to/data
 #
 # Path to log files:
 #
-
-path.logs: #{node['elasticsearch']['directory']['log']}
-  
-#path.plugins: /usr/share/elasticsearch/plugins
+#path.logs: /path/to/logs
 #
 # ----------------------------------- Memory -----------------------------------
 #
@@ -61,45 +52,27 @@ path.logs: #{node['elasticsearch']['directory']['log']}
 #
 # Set the bind address to a specific IP (IPv4 or IPv6):
 #
-#network.host: 192.168.1.10
+#network.host: 192.168.0.1
 #
-#network.bind_host:
-
-network.host: 0.0.0.0
-
 # Set a custom port for HTTP:
 #
-http.port: 9000
+#http.port: 9200
 #
 # For more information, consult the network module documentation.
-http.enabled: true
-http.cors.enabled: true
-http.cors.allow-origin: "/.*/"
-
 #
 # --------------------------------- Discovery ----------------------------------
 #
 # Pass an initial list of hosts to perform discovery when new node is started:
 # The default list of hosts is ["127.0.0.1", "[::1]"]
 #
-discovery.zen.ping.unicast.hosts: ["Travel-qa-datanode-1", "Travel-qa-datanode-2", "Travel-qa-datanode-3" ]
+#discovery.zen.ping.unicast.hosts: ["host1", "host2"]
 #
 # Prevent the "split brain" by configuring the majority of nodes (total number of master-eligible nodes / 2 + 1):
 #
-
-discovery.zen.minimum_master_nodes: 1
-discovery.zen.hosts_provider: ec2
-#discovery.ec2.tag.Name: Travel-Qa-Data-Elasticsearch
-#discovery.zen.ping.multicast.enabled: false
-discovery.ec2.tag.Environment: QA
-
+#discovery.zen.minimum_master_nodes: 
 #
 # For more information, consult the zen discovery module documentation.
 #
-
-#discovery.zen.ping.unicast.hosts: ["10.233.40.50","10.233.40.123","10.233.40.25"]
-
-
 # ---------------------------------- Gateway -----------------------------------
 #
 # Block initial recovery after a full cluster restart until N nodes are started:
@@ -113,4 +86,3 @@ discovery.ec2.tag.Environment: QA
 # Require explicit names when deleting indices:
 #
 #action.destructive_requires_name: true
-#xpack.security.enabled: false
